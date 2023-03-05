@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Requirement
+  - PostgreSQL
+  - Rails v. 7.0.3
+  - Ruby v. 3.1.2
 
-Things you may want to cover:
+# Install Gem / Libraries
+  - run bundle install
 
-* Ruby version
+# Set the ENV Variable
+  - Create .env file
+  - Set value to variables HOST_DB, USERNAME_DB, PASSWORD_DB and PORT_DB
 
-* System dependencies
+# Database Build
+  - run rake db:create
+  - run rake db:migrate
+  - run rake db:seed
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Run Unit Test
+  - run bundle exec rspec
